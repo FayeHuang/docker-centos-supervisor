@@ -22,6 +22,6 @@ command=/root/ssh_init.sh
  * 不指定 root login 密碼，預設密碼為 **changeme**
  
     `docker run -d -p 2222:22 fayehuang/centos-supervisor`
- * 設定 **ROOTPASSWORD**，指定 root login 密碼
+ * 指定 root login 密碼，*ROOTPASSWORD*=*<mypassword>*
  
     `docker run -d -p 2222:22 -e ROOTPASSWORD=<mypassword> fayehuang/centos-supervisor`
